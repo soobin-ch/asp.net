@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MainMaster.master" AutoEventWireup="true" CodeFile="sCommon.master.cs" Inherits="sCommon" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+
+    <table style="width:900px; border-collapse:collapse; " border="0">
+    <tr>
+        <td style="width:170px; text-align:center; vertical-align: top;"><asp:Image ID="Image2" runat="server" ImageUrl="~/images/sMaster.jpg" width="170px" />
+
+            <strong>
+    c#,ASP.NET 및 MS-SQL에 <br />관심있는 사람들을 환영합니다.
+</strong>
+        </td>
+
+        
+        <td style="width:730px; text-align:left; vertical-align: top;">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </td>
+    </tr>
+   
+</table>
+</asp:Content>
+

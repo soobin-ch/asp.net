@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MainMaster.master.cs" Inherits="MainMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>최수빈의 홈페이지에 오신것을 환영합니다.</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table style="width:900px; border-collapse:collapse; font-family:'Malgun Gothic'; font-size:12px;" border="0">
+            <tr>
+                <td style="width:700px; text-align:right; vertical-align: middle;"><asp:Label ID="lblLogin" runat="server" Text="로그인 해 주세요..."></asp:Label>
+                </td>
+                <td style="width:300px; text-align:left; vertical-align: middle;">
+                    <asp:ImageButton ID="ibtnToggle" runat="server" ImageUrl="~/images/mLogin.jpg" OnClick="ibtnToggle_Click" />
+                    <asp:ImageButton ID="ibtnHome" runat="server" ImageUrl="~/images/mHome.jpg" OnClick="ibtnHome_Click" />
+                    <asp:ImageButton ID="ibtnMemberRevise" runat="server" ImageUrl="~/images/teamMember.png" OnClick="ibtnMemberRivise_Click"  visible="false" Width="50"
+                        />
+                    
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align:middle; text-align:center;" colspan="2">
+                    <asp:Image ID="Image1" runat="server" ImageUrl="~/images/mMaster.jpg"  />
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align:middle; text-align:center;" colspan="2">
+                    <asp:ImageButton ID="ibtnProfile" runat="server" ImageUrl="~/images/mProfile.jpg" Width="140px" OnClick="ibtnProfile_Click"  />
+                    <asp:ImageButton ID="ibtnStudy" runat="server" ImageUrl="~/images/mStudy.jpg" Width="140px" OnClick="ibtnStudy_Click" />
+                    <asp:ImageButton ID="ibtnBbs" runat="server"  ImageUrl="~/images/mBbs.jpg" Width="140px" OnClick="ibtnBbs_Click" />
+                    <asp:ImageButton ID="ibtnDiary" runat="server" ImageUrl="~/images/mDiary.jpg" Width="140px" OnClick="ibtnDiary_Click" />
+                    <asp:ImageButton ID="ibtnGallery" runat="server" ImageUrl="~/images/mGallery.jpg" Width="140px" OnClick="ibtnGallery_Click" />
+                    <asp:ImageButton ID="ibtnAttend" runat="server" ImageUrl="~/images/mAttend.jpg" Width="140px" OnClick="ibtnAttend_Click" />
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align:middle; text-align:center;" colspan="2">
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:center; vertical-align: middle;" colspan="2">ccOPYRIGHT (C) 2020, 두원공과대학교 컴퓨터공학과 <br />경기도 파주시 파주읍 주라위길 159, 전화 031-935-7130</td>
+            </tr>
+        </table>
+     
+    </div>
+    </form>
+</body>
+</html>

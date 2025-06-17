@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MainMaster.master" AutoEventWireup="true" CodeFile="sStudy.master.cs" Inherits="sStudy" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <table style="width:900px; border-collapse:collapse; " border="0">
+        <tr>
+            <td style="width:170px; text-align:center; vertical-align:top;">
+                <asp:Image ID="Image2" runat="server" ImageUrl="~/images/sMaster.jpg" Width="170px" />
+                <strong>
+                    C#, ASP.NET 및 MS-SQL에 <br /> 관심있는 사람들을 환영합니다.
+                </strong>
+                <asp:ImageButton ID="ibtnCs" runat="server" ImageUrl="~/images/sCs.jpg" Width="140px" OnClick="ibtnCs_Click" CausesValidation="False" /><br />
+                <asp:ImageButton ID="ibtnAsp" runat="server" ImageUrl="~/images/sAspDotNet.jpg" Width="140px" OnClick="ibtnAsp_Click" CausesValidation="False" /><br />
+                <asp:ImageButton ID="ibtnSql" runat="server" ImageUrl="~/images/sMsSql.jpg" Width="140px" OnClick="ibtnSql_Click" CausesValidation="False" />
+                <asp:ImageButton ID="ibtnNews" runat="server" ImageUrl="~/images/sNews.jpg" Width="140px" OnClick="ibtnNews_Click" CausesValidation="False" />
+            </td>
+            <td style="width:730px; text-align:center; vertical-align:top;" >
+               <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+    </table>
+</asp:Content>
+
